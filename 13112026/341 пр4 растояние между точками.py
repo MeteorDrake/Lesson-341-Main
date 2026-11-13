@@ -1,5 +1,8 @@
 import math
-x1, y1 = map(float, input("Введите координаты первой точки (x y):").split())
-x2, y2 = map(float, input("Введите координаты второй точки (x y):").split())
-distance = (math.sqrt(((x1-x2)**2)+((y1-y2)**2)))
-print(f"Длинна отрезка: {distance:.2f} сантиметров")
+
+def solve_distance(x1, y1, x2, y2):
+    distance = (math.sqrt(((x1-x2)**2) + ((y1-y2)**2)))
+    return distance
+
+result = solve_distance(float(input("Введите координату (x) первой точки:")),float(input("Введите координату (y) первой точки:")),float(input("Введите координату (x) второй точки:")),float(input("Введите координату (y) второй точки:")))
+print(f"Длинна отрезка: {result:.2f} сантиметров")
