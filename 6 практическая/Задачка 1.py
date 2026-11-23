@@ -15,7 +15,6 @@ PRESSURE_MILD = ((105, 110), (130, 140))
 PULSE_NORMAL = (60, 100)
 PULSE_MILD = ((55, 60), (100, 110))
 
-
 #Проверка
 def in_range(value, bounds):
   low, high = bounds
