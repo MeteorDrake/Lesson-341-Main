@@ -1,6 +1,7 @@
 #Ввод
 pocket_input = input("Введите номер кармана от 0 до 36: ")
 
+#Проверка числа
 if not pocket_input.replace("-", "", 1).isdigit():
     print("ошибка ввода")
 else:
@@ -11,7 +12,7 @@ else:
     elif pocket_number == 0:
         print("зелёный")
     else:
-        #Диапазоны
+        #Диапазоны для вывода
         odd_is_red = 1 <= pocket_number <= 10 or 19 <= pocket_number <= 28
         is_odd = pocket_number % 2 != 0
         is_red = is_odd == odd_is_red
